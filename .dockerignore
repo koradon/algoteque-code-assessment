@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv
+env/
+venv/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Development environments
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Version control
+.git
+.gitignore
+
+# Project specific
+Dockerfile
+docker-compose.yml
+.dockerignore
+README.md
+tests/
+Makefile
+requirements-dev.txt
+
+# Cache and temporary files
+*.log
+*.tmp
+    

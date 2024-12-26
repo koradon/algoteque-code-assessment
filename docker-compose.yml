@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: algoteque-code-assessment
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./service:/app/service
+    environment:
+      - PYTHONPATH=/app
+    restart: unless-stopped 

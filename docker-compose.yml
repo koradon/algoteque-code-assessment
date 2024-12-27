@@ -10,6 +10,7 @@ services:
       - "8000:8000"
     volumes:
       - ./service:/app/service
+      - ./data:/app/data
     environment:
       - PYTHONPATH=/app
     restart: unless-stopped 

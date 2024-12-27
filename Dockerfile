@@ -16,4 +16,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY ./service ./service
 
 # Command to run the application
-CMD ["uvicorn", "service.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "service.main:app", "--host", "0.0.0.0", "--port", "8000", "--log-level", "info"]

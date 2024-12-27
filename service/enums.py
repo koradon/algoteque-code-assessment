@@ -1,8 +1,8 @@
 from enum import Enum
 
 class Topics(str, Enum):
-    reading = "reading"
-    math = "math"
-    science = "science"
-    history = "history"
-    art = "art"
+    READING = "reading"
+    MATH = "math"
+    SCIENCE = "science"
+    HISTORY = "history"
+    ART = "art"

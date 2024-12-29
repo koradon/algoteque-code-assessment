@@ -1,0 +1,31 @@
+# serializer version: 1
+# name: test_quotes_can_be_fetched[request_body0-3]
+  dict({
+    'provider_a': '8.00',
+    'provider_b': '6.00',
+    'provider_c': '10.00',
+  })
+# ---
+# name: test_quotes_can_be_fetched[request_body1-3]
+  dict({
+    'provider_a': '8.00',
+    'provider_b': '6.00',
+    'provider_c': '10.00',
+  })
+# ---
+# name: test_quotes_can_be_fetched[request_body2-3]
+  dict({
+    'provider_a': '10.00',
+    'provider_b': '5.00',
+    'provider_c': '10.00',
+  })
+# ---
+# name: test_quotes_can_be_fetched[request_body3-1]
+  dict({
+    'provider_b': '4.00',
+  })
+# ---
+# name: test_quotes_can_be_fetched[request_body4-0]
+  dict({
+  })
+# ---

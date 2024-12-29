@@ -23,7 +23,11 @@ def load_providers(app: FastAPI):
 
         app.state.providers = providers
         logger.warning(f"Providers loaded: {providers}")
-
+    except TypeError:
+        logger.error(
+            f"Warning: {settings.providers_path} is not a valid JSON file. Creating empty providers state."
+        )
+        app.state.providers = {}
     except FileNotFoundError:
         logger.error(
             f"Warning: {settings.providers_path} not found. Creating empty providers state."

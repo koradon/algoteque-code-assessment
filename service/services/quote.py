@@ -48,7 +48,11 @@ class QuoteService:
             rank = topic_ranks[topic]
             amount = level * self.percentage_ranks[rank]
 
-        return Quote(provider=provider, matched_topics=matched_topics, amount=amount)
+        return Quote(
+            provider=provider,
+            matched_topics=matched_topics,
+            amount=amount.quantize(Decimal("0.01")),
+        )
 
     def generate_quotes(self, topics: Dict[Topics, Decimal]) -> List[Quote]:
         top_topics = self.get_top_three_topics(topics)
